@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(23,57,45);
+    opacity: 0.7;
+}
+
+header h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 40px;
+    border: 1px solid #000;
+    background: lightblue;
+}
+
+header b {
+    color: red;
+}
+
+.table-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid beige;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 90px;
+    border: 0;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 100px;
+    background: lightcyan;
+    border: 3px solid #000;
+}
+
+input[type="button"]:hover {
+    background: rgb(215,226,226);
+}
+
+#popup {
+    z-index: 5;
+    position: fixed;
+    left: 26%;
+    top: 50%;
+    height: 70px;
+    width: 50%;
+    padding: 5px;
+    visibility: hidden;
+    background: green;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#popupbutton {
+    width: 50%;
+    margin-top: 10px;
+    height: 30px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.reset {
+    position: fixed;
+    top: 80%;
+    left: 52%;
+    transform: translate(-60%, -52%);
+    width: 200px;
+    height: 50px;
+    background: green;
+    color: #fff;
+    border: 3px solid #000;
+    font-size: 22px;
+}
+
